@@ -23,10 +23,10 @@ const rawTransaction = {
 };
 
 // -- Step 7: Sign the transaction with the Hex value of the private key of the sender
-const privateKeySender = '3e147d5eaec8c593293fecdfd62606dc458da9d28196263a9356a0059d5c73b6';
+const privateKeySender = 'PRIVATE KEY';
 const privateKeySenderHex = Buffer.from(privateKeySender, 'hex');
 const Tx = new EthereumTx(rawTransaction);
-console.log('privateKeySenderHex', privateKeySenderHex.length);
+// console.log('privateKeySenderHex', privateKeySenderHex.length);
 Tx.sign(privateKeySenderHex)
 
 // // // -- Step 8: Send the serialized signed transaction to the Ethereum network.
